@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Happy Birthday, Ivan!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #111;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            animation: backgroundGlow 5s infinite alternate;
+        }
+        h1 {
+            font-size: 3em;
+            color: #FFD700;
+            animation: bounce 2s infinite;
+        }
+        p {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+        .roblox-avatar {
+            width: 200px;
+            border-radius: 50%;
+            margin-top: 20px;
+            animation: spin 4s linear infinite;
+        }
+        .party-button {
+            background-color: #FFD700;
+            color: #111;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .party-button:hover {
+            transform: scale(1.1);
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        @keyframes backgroundGlow {
+            0% { background-color: #111; }
+            100% { background-color: #4CAF50; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Happy Birthday, Ivan!</h1>
+    <p>Wishing you an epic day filled with wins, laughs!!</p>
+        <p>Level up this year and make it unforgettable!</p>
+    <button class="party-button" onclick="startParty()">Start the Party!</button>
+
+    <audio id="birthdayMusic" loop>
+        <source src="https://www.bensound.com/bensound-music/bensound-birthday.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        function startParty() {
+            alert('🎉 Happy Birthday, Ivan! 🎮 Let’s get this party started! 🎈');
+            document.body.style.backgroundColor = '#4CAF50';
+            document.getElementById('birthdayMusic').play();
+        }
+    </script>
+</body>
+</html>
